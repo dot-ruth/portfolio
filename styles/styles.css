@@ -457,6 +457,11 @@ section {
   display: flex;
   justify-content: flex-start;
 }
+.contact-content-con .right-contact .submit-btn .submit-main-btn .submit-btn-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 /* contact section */
 /* about */

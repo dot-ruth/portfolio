@@ -454,6 +454,14 @@ h5{
         .submit-btn{
             display: flex;
             justify-content: flex-start;
+
+           .submit-main-btn {
+            .submit-btn-text{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
         }
     }
 
