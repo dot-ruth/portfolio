@@ -1,2 +1,3 @@
 # PORTFOLIO
-A simple portfolio 
+A simple portfolio with mostly html and css
+
