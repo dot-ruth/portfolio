@@ -49,7 +49,7 @@ function sendEmail() {
   // You can use a service like EmailJS or your own server to send the email
   // Example using EmailJS
 
-    emailjs.send(service_0rp5rcm, template_k7vkjbg, {
+    emailjs.send("service_0rp5rcm", "template_k7vkjbg", {
   to: "ruthgetaneh5@gmail.com",
   from: email,
   subject: subject,
