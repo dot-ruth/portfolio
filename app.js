@@ -49,11 +49,11 @@ function sendEmail() {
   // You can use a service like EmailJS or your own server to send the email
   // Example using EmailJS:
   Email.send({
-    Host: "smtp.your-email-provider.com",
-    Username: "your-email@example.com",
-    Password: "your-email-password",
-    To: "recipient@example.com",
-    From: "your-email@example.com",
+    Host: "smtp.gmail.com",
+    Username: "ruthgetaneh5@gmail.com",
+    Password: "whattoremember",
+    To: "ruthgetaneh5@gmail.com",
+    From: email,
     Subject: subject,
     Body: emailBody
   }).then(
