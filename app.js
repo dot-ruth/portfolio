@@ -35,5 +35,37 @@ allsection[i].addEventListener("click",(e)=>{
    
    
 }
+
+function sendEmail() {
+  // Fetch form data
+  var name = document.getElementById('name').value;
+  var email = document.getElementById('email').value;
+  var subject = document.getElementById('subject').value;
+  var message = document.getElementById('message').value;
+
+  // Construct the email body
+  var emailBody = "Name: " + name + "\nEmail: " + email + "\nSubject: " + subject + "\nMessage: " + message;
+
+  // You can use a service like EmailJS or your own server to send the email
+  // Example using EmailJS:
+  Email.send({
+    Host: "smtp.your-email-provider.com",
+    Username: "your-email@example.com",
+    Password: "your-email-password",
+    To: "recipient@example.com",
+    From: "your-email@example.com",
+    Subject: subject,
+    Body: emailBody
+  }).then(
+    function (message) {
+      alert("Email sent successfully");
+    },
+    function (error) {
+      alert("Error sending email");
+    }
+  );
+}
+
+
 pagetransition();
  
