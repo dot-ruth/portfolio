@@ -248,25 +248,64 @@ section {
   width: 75%;
 }
 .about-stats .progress-bars .progress-bar .progress .html {
-  width: 75%;
+  width: 90%;
 }
 .about-stats .progress-bars .progress-bar .progress .css {
-  width: 60%;
+  width: 90%;
+}
+.about-stats .progress-bars .progress-bar .progress .sass {
+  width: 90%;
+}
+.about-stats .progress-bars .progress-bar .progress .bootstrap {
+  width: 70%;
 }
 .about-stats .progress-bars .progress-bar .progress .javascript {
+  width: 70%;
+}
+.about-stats .progress-bars .progress-bar .progress .angular {
+  width: 50%;
+}
+.about-stats .progress-bars .progress-bar .progress .react {
+  width: 60%;
+}
+.about-stats .progress-bars .progress-bar .progress .laravel {
+  width: 60%;
+}
+.about-stats .progress-bars .progress-bar .progress .c# {
+  width: 50%;
+}
+.about-stats .progress-bars .progress-bar .progress .asp {
+  width: 40%;
+}
+.about-stats .progress-bars .progress-bar .progress .typescript {
+  width: 60%;
+}
+.about-stats .progress-bars .progress-bar .progress .notebook {
+  width: 40%;
+}
+.about-stats .progress-bars .progress-bar .progress .python {
+  width: 70%;
+}
+.about-stats .progress-bars .progress-bar .progress .django {
+  width: 40%;
+}
+.about-stats .progress-bars .progress-bar .progress .express {
+  width: 50%;
+}
+.about-stats .progress-bars .progress-bar .progress .node {
   width: 50%;
 }
 .about-stats .progress-bars .progress-bar .progress .cpp {
-  width: 90%;
-}
-.about-stats .progress-bars .progress-bar .progress .java {
-  width: 75%;
-}
-.about-stats .progress-bars .progress-bar .progress .php {
   width: 60%;
 }
+.about-stats .progress-bars .progress-bar .progress .java {
+  width: 80%;
+}
+.about-stats .progress-bars .progress-bar .progress .php {
+  width: 70%;
+}
 .about-stats .progress-bars .progress-bar .progress .sql {
-  width: 90%;
+  width: 70%;
 }
 
 .stat-title {
