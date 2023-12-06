@@ -48,7 +48,7 @@ function sendEmail() {
 
   // You can use a service like EmailJS or your own server to send the email
   // Example using EmailJS:
-  Email.send({
+  emailjs.send({
     Host: "smtp.gmail.com",
     Username: "ruthgetaneh5@gmail.com",
     Password: "whattoremember",
