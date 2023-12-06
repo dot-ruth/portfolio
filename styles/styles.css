@@ -609,6 +609,7 @@ section {
     margin: 1rem 0.3rem;
   }
   .about-container {
+    width: 100%;
     grid-template-columns: repeat(1, 1fr);
   }
   .about-container .right-about {
@@ -629,6 +630,7 @@ section {
     padding: 2rem 2.5rem !important;
   } */
   .about-stats .progress-bars {
+    width: 100%;
     grid-template-columns: repeat(1, 1fr);
   }
   .portfolios {
@@ -637,6 +639,7 @@ section {
     margin-top: 1rem;
   }
   .contact-content-con {
+    width: 100%;
     flex-direction: column;
   }
   .contact-content-con .right-contact {
@@ -654,6 +657,7 @@ section {
     margin-bottom: 6rem;
   }
   .contact-item {
+    width: 100%;
     flex-direction: column;
     margin: 1rem 0;
   }
@@ -758,12 +762,15 @@ section {
     padding: 7rem 3rem;
   }
   .about-stats .progress-bars {
+    width: 100%;
     grid-template-columns: repeat(1, 1fr);
   }
   .about-container .right-about {
+    width: 100%;
     grid-template-columns: repeat(1, 1fr);
   }
   .timeline {
+    width: 100%;
     grid-template-columns: repeat(1, 1fr);
   }
   .main-title h2 {
