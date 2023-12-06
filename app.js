@@ -47,16 +47,14 @@ function sendEmail() {
   var emailBody = "Name: " + name + "\nEmail: " + email + "\nSubject: " + subject + "\nMessage: " + message;
 
   // You can use a service like EmailJS or your own server to send the email
-  // Example using EmailJS:
-  emailjs.send({
-    Host: "smtp.gmail.com",
-    Username: "ruthgetaneh5@gmail.com",
-    Password: "whattoremember",
-    To: "ruthgetaneh5@gmail.com",
-    From: email,
-    Subject: subject,
-    Body: emailBody
-  }).then(
+  // Example using EmailJS
+
+    emailjs.send(service_0rp5rcm, template_k7vkjbg, {
+  to: "ruthgetaneh5@gmail.com",
+  from: email,
+  subject: subject,
+  body: emailBody,
+}).then(
     function (message) {
       alert("Email sent successfully");
     },
