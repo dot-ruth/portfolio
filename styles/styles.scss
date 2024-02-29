@@ -87,7 +87,45 @@ section{
         }
     }
 }
-.controlls{
+// .controlls{
+//     position: fixed;
+//     z-index: 10;
+//     top: 50%;
+//     right: 3%;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     justify-content: center;
+//     transform: translateY(-50%);
+//     .active-btn{
+//        background-color: var(--color-secondary) !important;
+//        transition: all .4s ease-in-out; 
+//        i{
+//         color: var(--color-white) !important;
+//        }
+//     }
+//     .controll{
+//         padding: 1rem;
+//         cursor: pointer;
+//         background-color: var(--color-grey-4);
+//         width: 55px;
+//         height: 55px;
+//         border-radius: 50%;
+//         display: flex;
+//         align-items: center;
+//         margin:0.7rem 0;
+//         box-shadow: var(--box-shadow-1);
+//         i{
+//             font-size: 1.2rem;
+//             color: var(--color-grey-2);
+//             pointer-events: none;
+    
+//         }
+//     }
+    
+// }
+
+.controlls {
     position: fixed;
     z-index: 10;
     top: 50%;
@@ -97,13 +135,6 @@ section{
     align-items: center;
     justify-content: center;
     transform: translateY(-50%);
-    .active-btn{
-       background-color: var(--color-secondary) !important;
-       transition: all .4s ease-in-out; 
-       i{
-        color: var(--color-white) !important;
-       }
-    }
     .controll{
         padding: 1rem;
         cursor: pointer;
@@ -112,17 +143,21 @@ section{
         height: 55px;
         border-radius: 50%;
         display: flex;
+        justify-content: center;
         align-items: center;
-        margin:0.7rem 0;
-        box-shadow: var(--box-shadow-1);
-        i{
+        margin: .7rem 0;
+        box-shadow: var(--box-shadow-1) ;
+        i {
             font-size: 1.2rem;
             color: var(--color-grey-2);
             pointer-events: none;
-    
         }
     }
-    
+    .active-btn {
+        background-color: var(--color-secondary);
+        transition: all .4s ease-in-out;
+        i { color: var(--color-white); }
+    }
 }
 
 /** header section **/

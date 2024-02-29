@@ -105,13 +105,6 @@ section {
   justify-content: center;
   transform: translateY(-50%);
 }
-.controlls .active-btn {
-  background-color: var(--color-secondary) !important;
-  transition: all 0.4s ease-in-out;
-}
-.controlls .active-btn i {
-  color: var(--color-white) !important;
-}
 .controlls .controll {
   padding: 1rem;
   cursor: pointer;
@@ -120,6 +113,7 @@ section {
   height: 55px;
   border-radius: 50%;
   display: flex;
+  justify-content: center;
   align-items: center;
   margin: 0.7rem 0;
   box-shadow: var(--box-shadow-1);
@@ -128,6 +122,13 @@ section {
   font-size: 1.2rem;
   color: var(--color-grey-2);
   pointer-events: none;
+}
+.controlls .active-btn {
+  background-color: var(--color-secondary);
+  transition: all 0.4s ease-in-out;
+}
+.controlls .active-btn i {
+  color: var(--color-white);
 }
 
 /** header section **/
@@ -140,7 +141,6 @@ section {
   display: flex;
   align-items: center;
   position: relative;
-  top: -10;
 }
 .header-content .left-header .h-shape {
   transition: all 1s ease-in-out;
@@ -532,6 +532,9 @@ section {
   header {
     padding: 0 !important;
   }
+  section {
+    padding: 1.5rem 2.5rem !important;
+  }
   .header-content {
     grid-template-columns: repeat(1, 1fr);
     padding-bottom: 6rem;
@@ -554,7 +557,7 @@ section {
     margin: 0 auto;
     width: 90%;
   }
-  .controls {
+  .controlls {
     top: auto;
     bottom: 0;
     flex-direction: row;
@@ -564,7 +567,7 @@ section {
     width: 100%;
     background-color: var(--color-grey-5);
   }
-  .controls .control {
+  .controlls .controll {
     margin: 1rem 0.3rem;
   }
   .about-container {
@@ -585,7 +588,7 @@ section {
     padding-bottom: 6rem;
   }
   .container {
-    padding: 2rem 2.5rem !important;
+    padding: 2rem 0rem !important;
   }
   .about-stats .progress-bars {
     grid-template-columns: repeat(1, 1fr);
