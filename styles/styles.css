@@ -553,6 +553,9 @@ section {
     text-align: center;
     padding-top: 3rem;
   }
+  .right-header .button-con {
+    width: 100vw !important;
+  }
   .header-content .left-header .image {
     margin: 0 auto;
     width: 90%;

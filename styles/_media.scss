@@ -30,6 +30,10 @@
             text-align: center;
             padding-top: 3rem;
         }
+        .button-con{
+            display: flex;
+            flex-direction: column !important;
+        }
     }
     .header-content .left-header .image{
         margin: 0 auto;
@@ -159,11 +163,7 @@
         margin-bottom: 6rem;
     }
 
-    .main-title{
-        h2{
-           
-        }
-    }
+   
     
 }
 
