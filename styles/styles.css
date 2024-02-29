@@ -29,6 +29,10 @@ body {
   transition: all 0.4s ease-in-out;
 }
 
+.highlight {
+  color: var(--color-secondary);
+}
+
 a {
   display: inline-block;
   text-decoration: none;
@@ -79,16 +83,7 @@ section {
 
 .active {
   display: block;
-  -webkit-animation: scaleAnim 1s ease-in-out;
-          animation: scaleAnim 1s ease-in-out;
-}
-@-webkit-keyframes scaleAnim {
-  0% {
-    transform: translateY(-100%) scaleY(0);
-  }
-  100% {
-    transform: translateY(0) scaleY(1);
-  }
+  animation: scaleAnim 1s ease-in-out;
 }
 @keyframes scaleAnim {
   0% {
@@ -155,8 +150,7 @@ section {
   left: 0;
   top: 0;
   z-index: -1;
-  -webkit-clip-path: polygon(0 1%, 20% 1%, 79% 100%, 0% 100%);
-          clip-path: polygon(0 1%, 20% 1%, 79% 100%, 0% 100%);
+  clip-path: polygon(0 1%, 20% 1%, 79% 100%, 0% 100%);
 }
 .header-content .left-header .image {
   border-radius: var(--br-sm-2);
@@ -169,8 +163,7 @@ section {
   width: 100%;
   height: 80%;
   border-radius: var(--br-sm-2);
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   transition: all 0.4s ease-in-out;
   filter: grayscale(100%);
 }
@@ -181,9 +174,8 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items:center;
+  align-items: center;
   padding-right: 10rem;
-/*   margin-top: -50%; */
 }
 .header-content .right-header .name {
   font-size: 2rem;
@@ -194,6 +186,12 @@ section {
 .header-content .right-header p {
   margin: 1.5rem 0;
   line-height: 2rem;
+}
+.header-content .right-header .button-con {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
 }
 
 /* about */
@@ -248,64 +246,25 @@ section {
   width: 75%;
 }
 .about-stats .progress-bars .progress-bar .progress .html {
-  width: 90%;
+  width: 75%;
 }
 .about-stats .progress-bars .progress-bar .progress .css {
-  width: 90%;
-}
-.about-stats .progress-bars .progress-bar .progress .sass {
-  width: 90%;
-}
-.about-stats .progress-bars .progress-bar .progress .bootstrap {
-  width: 70%;
+  width: 60%;
 }
 .about-stats .progress-bars .progress-bar .progress .javascript {
-  width: 70%;
-}
-.about-stats .progress-bars .progress-bar .progress .angular {
-  width: 50%;
-}
-.about-stats .progress-bars .progress-bar .progress .react {
-  width: 60%;
-}
-.about-stats .progress-bars .progress-bar .progress .laravel {
-  width: 60%;
-}
-.about-stats .progress-bars .progress-bar .progress .c# {
-  width: 50%;
-}
-.about-stats .progress-bars .progress-bar .progress .asp {
-  width: 40%;
-}
-.about-stats .progress-bars .progress-bar .progress .typescript {
-  width: 60%;
-}
-.about-stats .progress-bars .progress-bar .progress .notebook {
-  width: 40%;
-}
-.about-stats .progress-bars .progress-bar .progress .python {
-  width: 70%;
-}
-.about-stats .progress-bars .progress-bar .progress .django {
-  width: 40%;
-}
-.about-stats .progress-bars .progress-bar .progress .express {
-  width: 50%;
-}
-.about-stats .progress-bars .progress-bar .progress .node {
   width: 50%;
 }
 .about-stats .progress-bars .progress-bar .progress .cpp {
-  width: 60%;
+  width: 90%;
 }
 .about-stats .progress-bars .progress-bar .progress .java {
-  width: 80%;
+  width: 75%;
 }
 .about-stats .progress-bars .progress-bar .progress .php {
-  width: 70%;
+  width: 60%;
 }
 .about-stats .progress-bars .progress-bar .progress .sql {
-  width: 70%;
+  width: 90%;
 }
 
 .stat-title {
@@ -392,8 +351,7 @@ section {
 .portfolios .portfolio-item img {
   width: 100%;
   height: 250px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 15px;
 }
 .portfolios .portfolio-item .hover-items {
@@ -609,7 +567,6 @@ section {
     margin: 1rem 0.3rem;
   }
   .about-container {
-    width: 100%;
     grid-template-columns: repeat(1, 1fr);
   }
   .about-container .right-about {
@@ -626,11 +583,10 @@ section {
     grid-template-columns: repeat(1, 1fr);
     padding-bottom: 6rem;
   }
-/*   .container {
+  .container {
     padding: 2rem 2.5rem !important;
-  } */
+  }
   .about-stats .progress-bars {
-    width: 100%;
     grid-template-columns: repeat(1, 1fr);
   }
   .portfolios {
@@ -639,7 +595,6 @@ section {
     margin-top: 1rem;
   }
   .contact-content-con {
-    width: 100%;
     flex-direction: column;
   }
   .contact-content-con .right-contact {
@@ -657,7 +612,6 @@ section {
     margin-bottom: 6rem;
   }
   .contact-item {
-    width: 100%;
     flex-direction: column;
     margin: 1rem 0;
   }
@@ -762,15 +716,12 @@ section {
     padding: 7rem 3rem;
   }
   .about-stats .progress-bars {
-    width: 100%;
     grid-template-columns: repeat(1, 1fr);
   }
   .about-container .right-about {
-    width: 100%;
     grid-template-columns: repeat(1, 1fr);
   }
   .timeline {
-    width: 100%;
     grid-template-columns: repeat(1, 1fr);
   }
   .main-title h2 {
@@ -779,4 +730,6 @@ section {
   .main-title h2 span {
     font-size: 3rem;
   }
-}/*# sourceMappingURL=styles.css.map */
+}
+
+/*# sourceMappingURL=styles.css.map */
