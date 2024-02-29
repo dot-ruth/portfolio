@@ -142,14 +142,14 @@ section{
         background-color: var(--color-secondary);
         position: absolute;
         left: 0;
-        top: 0;
+        top: -10;
         z-index: -1;
         clip-path: polygon(0 1%, 20% 1%, 79% 100%, 0% 100%);
     }
     .image{
       border-radius: var(--br-sm-2)  ;
-      height: 70%;
-      width: 70%;
+      height: 80%;
+      width: 80%;
       margin-left: 4rem;
       transition: all .4s ease-in-out;
       img{
